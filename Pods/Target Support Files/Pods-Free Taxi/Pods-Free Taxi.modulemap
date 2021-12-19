@@ -1,0 +1,6 @@
+framework module Pods_Free_Taxi {
+  umbrella header "Pods-Free Taxi-umbrella.h"
+
+  export *
+  module * { export * }
+}
