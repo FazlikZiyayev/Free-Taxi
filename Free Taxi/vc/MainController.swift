@@ -10,7 +10,7 @@ import SideMenu
 import GoogleMaps
 import CoreLocation
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class MainController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var currentLocation: UILabel!
@@ -26,9 +26,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        btnNext.layer.cornerRadius = 15
+        btnNext.layer.maskedCorners = .layerMaxXMaxYCorner
+        
         locationManager.delegate = self
-        sideMenu = SideMenuNavigationController(rootViewController: UIViewController())
+        sideMenu = SideMenuNavigationController(rootViewController: MenuList())
         SideMenuManager.default.leftMenuNavigationController = sideMenu
+        sideMenu?.menuWidth = view.frame.width * 0.8
         SideMenuManager.default.addPanGestureToPresent(toView: self.view)
         adressBlock.layer.cornerRadius = adressBlock.frame.height / 6.0
     }

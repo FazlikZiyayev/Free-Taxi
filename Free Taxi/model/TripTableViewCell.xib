@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tripCell" rowHeight="150" id="KGk-i7-Jjw" customClass="TripTableViewCell" customModule="Free_Taxi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMS-JG-M6G">
+                        <rect key="frame" x="15" y="10" width="320" height="130"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2Ar-Rj-cFs">
+                                <rect key="frame" x="0.0" y="8" width="320" height="30"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="from_icon" translatesAutoresizingMaskIntoConstraints="NO" id="5iK-mB-i9m">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="BHA-5w-aBN"/>
+                                            <constraint firstAttribute="width" constant="30" id="qlO-YT-gix"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="улица Sharof Rashidov, Ташкент" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1V2-CW-FgU">
+                                        <rect key="frame" x="40" y="0.0" width="280" height="30"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="16"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="veX-bF-s1W">
+                                <rect key="frame" x="0.0" y="38" width="320" height="30"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="where_icon" translatesAutoresizingMaskIntoConstraints="NO" id="gzr-2W-xWs">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="O2W-Oe-gym"/>
+                                            <constraint firstAttribute="width" constant="30" id="wYr-Bq-n2h"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5a улица Асадуллы Ходжаева" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEz-UB-pyq">
+                                        <rect key="frame" x="40" y="0.0" width="280" height="30"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="16"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMN-q6-6zd">
+                                <rect key="frame" x="0.0" y="78" width="320" height="52"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21:36 - 22:12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOo-HV-Emd">
+                                        <rect key="frame" x="13" y="15" width="89" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="4u5-dV-5u6">
+                                        <rect key="frame" x="190" y="-8" width="120" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="3jH-m2-O6o"/>
+                                            <constraint firstAttribute="height" constant="50" id="u7K-cl-iI4"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="4u5-dV-5u6" secondAttribute="bottom" constant="10" id="AJ7-fP-08P"/>
+                                    <constraint firstItem="OOo-HV-Emd" firstAttribute="centerY" secondItem="XMN-q6-6zd" secondAttribute="centerY" id="Pue-DN-fZs"/>
+                                    <constraint firstAttribute="trailing" secondItem="4u5-dV-5u6" secondAttribute="trailing" constant="10" id="QgI-Z8-iqm"/>
+                                    <constraint firstItem="OOo-HV-Emd" firstAttribute="leading" secondItem="XMN-q6-6zd" secondAttribute="leading" constant="13" id="fjS-Iy-8Ah"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="veX-bF-s1W" secondAttribute="trailing" id="2LM-aJ-g2R"/>
+                            <constraint firstItem="2Ar-Rj-cFs" firstAttribute="leading" secondItem="IMS-JG-M6G" secondAttribute="leading" id="3PZ-fQ-Jvk"/>
+                            <constraint firstItem="XMN-q6-6zd" firstAttribute="top" secondItem="veX-bF-s1W" secondAttribute="bottom" constant="10" id="ATo-Yg-enb"/>
+                            <constraint firstItem="veX-bF-s1W" firstAttribute="leading" secondItem="IMS-JG-M6G" secondAttribute="leading" id="DP0-k3-k1y"/>
+                            <constraint firstItem="2Ar-Rj-cFs" firstAttribute="top" secondItem="IMS-JG-M6G" secondAttribute="top" constant="8" id="Qea-zd-bOD"/>
+                            <constraint firstItem="XMN-q6-6zd" firstAttribute="leading" secondItem="IMS-JG-M6G" secondAttribute="leading" id="SdA-9S-rZg"/>
+                            <constraint firstAttribute="trailing" secondItem="2Ar-Rj-cFs" secondAttribute="trailing" id="lJE-WR-E89"/>
+                            <constraint firstAttribute="bottom" secondItem="XMN-q6-6zd" secondAttribute="bottom" id="mqp-sb-9wG"/>
+                            <constraint firstItem="veX-bF-s1W" firstAttribute="top" secondItem="2Ar-Rj-cFs" secondAttribute="bottom" id="pqv-1E-PDa"/>
+                            <constraint firstAttribute="trailing" secondItem="XMN-q6-6zd" secondAttribute="trailing" id="q9r-iy-yKI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="IMS-JG-M6G" secondAttribute="trailing" constant="15" id="FqO-YG-OgZ"/>
+                    <constraint firstItem="IMS-JG-M6G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="MY3-Mf-57S"/>
+                    <constraint firstItem="IMS-JG-M6G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="j9B-04-naH"/>
+                    <constraint firstAttribute="bottom" secondItem="IMS-JG-M6G" secondAttribute="bottom" constant="10" id="ntD-PJ-oUq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressFrom" destination="1V2-CW-FgU" id="cO5-DA-8s8"/>
+                <outlet property="addressTo" destination="yEz-UB-pyq" id="vzc-Ic-hOh"/>
+                <outlet property="blockView" destination="IMS-JG-M6G" id="vd5-2Y-Gxm"/>
+                <outlet property="cartype" destination="4u5-dV-5u6" id="Jwb-3r-t76"/>
+                <outlet property="lightGrayView" destination="XMN-q6-6zd" id="Rsn-i8-c6r"/>
+                <outlet property="timePeriod" destination="OOo-HV-Emd" id="wPU-tk-OKq"/>
+            </connections>
+            <point key="canvasLocation" x="71.014492753623188" y="75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="car" width="108" height="39"/>
+        <image name="from_icon" width="24" height="24"/>
+        <image name="where_icon" width="24" height="24"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

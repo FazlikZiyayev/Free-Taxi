@@ -8,4 +8,6 @@ target 'Free Taxi' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'SideMenu'
+  pod 'FloatingPanel'
+
 end

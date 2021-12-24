@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Free_Taxi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainController" customModule="Free_Taxi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,6 +150,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RuQ-Fn-c7g" secondAttribute="bottom" id="x5v-0v-AzV"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="zEB-zw-OXB"/>
                     <connections>
                         <outlet property="adressBlock" destination="hYL-on-Qtu" id="Ep8-06-BlJ"/>
                         <outlet property="btnNext" destination="Gbg-zx-a8k" id="Vag-A5-9vv"/>
@@ -159,7 +160,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="571.01449275362324" y="128.57142857142856"/>
+            <point key="canvasLocation" x="1481.1594202898552" y="128.57142857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vjd-Y3-hJJ">
+            <objects>
+                <viewController id="ws6-vH-boN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ggt-lD-OG8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XCZ-8O-oKy">
+                                <rect key="frame" x="177" y="263" width="110" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hTf-4p-pds"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wTH-cT-B5I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2809" y="70"/>
         </scene>
     </scenes>
     <resources>

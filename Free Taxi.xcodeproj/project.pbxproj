@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		F4229F91276CFD6800C54C3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4229F90276CFD6800C54C3C /* AppDelegate.swift */; };
 		F4229F93276CFD6800C54C3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4229F92276CFD6800C54C3C /* SceneDelegate.swift */; };
-		F4229F95276CFD6800C54C3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4229F94276CFD6800C54C3C /* ViewController.swift */; };
+		F4229F95276CFD6800C54C3C /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4229F94276CFD6800C54C3C /* MainController.swift */; };
 		F4229F98276CFD6800C54C3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4229F96276CFD6800C54C3C /* Main.storyboard */; };
 		F4229F9A276CFD6800C54C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4229F99276CFD6800C54C3C /* Assets.xcassets */; };
 		F4229F9D276CFD6800C54C3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4229F9B276CFD6800C54C3C /* LaunchScreen.storyboard */; };
-		F44A9D8F276FCA8000068BB2 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44A9D8D276FCA8000068BB2 /* SideMenuViewController.swift */; };
-		F44A9D90276FCA8000068BB2 /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44A9D8E276FCA8000068BB2 /* SideMenuViewController.xib */; };
+		F43AF4642771B74A00CC3ACB /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43AF4632771B74A00CC3ACB /* MenuList.swift */; };
+		F44A9D9927707C2A00068BB2 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44A9D9727707C2A00068BB2 /* TripTableViewCell.swift */; };
+		F44A9D9A27707C2A00068BB2 /* TripTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44A9D9827707C2A00068BB2 /* TripTableViewCell.xib */; };
+		F4AA724F2771FBAA0098E927 /* TripHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AA724E2771FBAA0098E927 /* TripHistory.swift */; };
+		F4AA725127730A7D0098E927 /* TripDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AA725027730A7D0098E927 /* TripDetails.swift */; };
+		F4AA7255277325160098E927 /* TripPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AA7254277325160098E927 /* TripPanel.swift */; };
 		F4F0A5FE276D0053004B5A42 /* Pods_Free_Taxi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CE8F9713A7CFAEFE2BCAFF /* Pods_Free_Taxi.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,13 +29,17 @@
 		F4229F8D276CFD6800C54C3C /* Free Taxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Free Taxi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4229F90276CFD6800C54C3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4229F92276CFD6800C54C3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F4229F94276CFD6800C54C3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4229F94276CFD6800C54C3C /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		F4229F97276CFD6800C54C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4229F99276CFD6800C54C3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4229F9C276CFD6800C54C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4229F9E276CFD6800C54C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F44A9D8D276FCA8000068BB2 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
-		F44A9D8E276FCA8000068BB2 /* SideMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
+		F43AF4632771B74A00CC3ACB /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
+		F44A9D9727707C2A00068BB2 /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
+		F44A9D9827707C2A00068BB2 /* TripTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripTableViewCell.xib; sourceTree = "<group>"; };
+		F4AA724E2771FBAA0098E927 /* TripHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripHistory.swift; sourceTree = "<group>"; };
+		F4AA725027730A7D0098E927 /* TripDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetails.swift; sourceTree = "<group>"; };
+		F4AA7254277325160098E927 /* TripPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPanel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,7 @@
 			children = (
 				F4229F90276CFD6800C54C3C /* AppDelegate.swift */,
 				F4229F92276CFD6800C54C3C /* SceneDelegate.swift */,
+				F44A9D9527707C0400068BB2 /* model */,
 				F44A9D89276FC77D00068BB2 /* vc */,
 				F44A9D8A276FC78400068BB2 /* view */,
 				F4229F99276CFD6800C54C3C /* Assets.xcassets */,
@@ -98,9 +107,11 @@
 		F44A9D89276FC77D00068BB2 /* vc */ = {
 			isa = PBXGroup;
 			children = (
-				F4229F94276CFD6800C54C3C /* ViewController.swift */,
-				F44A9D8D276FCA8000068BB2 /* SideMenuViewController.swift */,
-				F44A9D8E276FCA8000068BB2 /* SideMenuViewController.xib */,
+				F4229F94276CFD6800C54C3C /* MainController.swift */,
+				F43AF4632771B74A00CC3ACB /* MenuList.swift */,
+				F4AA724E2771FBAA0098E927 /* TripHistory.swift */,
+				F4AA725027730A7D0098E927 /* TripDetails.swift */,
+				F4AA7254277325160098E927 /* TripPanel.swift */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -111,6 +122,15 @@
 				F4229F96276CFD6800C54C3C /* Main.storyboard */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		F44A9D9527707C0400068BB2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F44A9D9727707C2A00068BB2 /* TripTableViewCell.swift */,
+				F44A9D9827707C2A00068BB2 /* TripTableViewCell.xib */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,7 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F44A9D90276FCA8000068BB2 /* SideMenuViewController.xib in Resources */,
+				F44A9D9A27707C2A00068BB2 /* TripTableViewCell.xib in Resources */,
 				F4229F9D276CFD6800C54C3C /* LaunchScreen.storyboard in Resources */,
 				F4229F9A276CFD6800C54C3C /* Assets.xcassets in Resources */,
 				F4229F98276CFD6800C54C3C /* Main.storyboard in Resources */,
@@ -247,10 +267,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F44A9D8F276FCA8000068BB2 /* SideMenuViewController.swift in Sources */,
-				F4229F95276CFD6800C54C3C /* ViewController.swift in Sources */,
+				F4AA725127730A7D0098E927 /* TripDetails.swift in Sources */,
+				F4AA7255277325160098E927 /* TripPanel.swift in Sources */,
+				F4AA724F2771FBAA0098E927 /* TripHistory.swift in Sources */,
+				F44A9D9927707C2A00068BB2 /* TripTableViewCell.swift in Sources */,
+				F4229F95276CFD6800C54C3C /* MainController.swift in Sources */,
 				F4229F91276CFD6800C54C3C /* AppDelegate.swift in Sources */,
 				F4229F93276CFD6800C54C3C /* SceneDelegate.swift in Sources */,
+				F43AF4642771B74A00CC3ACB /* MenuList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
