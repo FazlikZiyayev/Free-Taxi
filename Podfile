@@ -9,5 +9,6 @@ target 'Free Taxi' do
   pod 'GooglePlaces'
   pod 'SideMenu'
   pod 'FloatingPanel'
+  pod 'SwiftyJSON'
 
 end
