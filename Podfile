@@ -10,5 +10,6 @@ target 'Free Taxi' do
   pod 'SideMenu'
   pod 'FloatingPanel'
   pod 'SwiftyJSON'
+  pod 'lottie-ios'
 
 end

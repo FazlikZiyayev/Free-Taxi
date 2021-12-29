@@ -10,6 +10,11 @@ import SideMenu
 import GoogleMaps
 import CoreLocation
 import SwiftyJSON
+import Lottie
+
+// Main part
+//lottieView.play(fromFrame: 1, toFrame: 10, loopMode: .playOnce)
+
 
 class MainViewController: UIViewController {
     
@@ -35,12 +40,12 @@ class MainViewController: UIViewController {
         return btnShowMenu
     }()
     
-    let mapPin: UIImageView = {
-        let mapPin = UIImageView()
-        mapPin.image = UIImage(named: "map_pin")
-        mapPin.translatesAutoresizingMaskIntoConstraints = false
-        
-        return mapPin
+    let mapPinAnimated: AnimationView = {
+        let mapPinAnimated: AnimationView = .init(name: "mapPin")
+        mapPinAnimated.loopMode = .loop
+        mapPinAnimated.translatesAutoresizingMaskIntoConstraints = false
+
+        return mapPinAnimated
     }()
     
     let addressBlock: UIView = {
@@ -142,8 +147,10 @@ class MainViewController: UIViewController {
         locationManager.delegate = self
         mapView.delegate = self
         
+        
         setupSideMenu()
         setupLayouts()
+        
     }
 
 
@@ -208,11 +215,12 @@ class MainViewController: UIViewController {
         btnShowMenu.widthAnchor.constraint(equalToConstant: 60).isActive = true
         btnShowMenu.heightAnchor.constraint(equalToConstant: 60).isActive = true
         
-        view.addSubview(mapPin)
-        mapPin.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        mapPin.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        mapPin.heightAnchor.constraint(equalToConstant: 60).isActive = true
-        mapPin.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        
+        // map pin
+        view.addSubview(mapPinAnimated)
+        mapPinAnimated.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        mapPinAnimated.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        
         
         view.addSubview(addressBlock)
         addressBlock.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
@@ -343,7 +351,24 @@ extension MainViewController: GMSMapViewDelegate {
                 }
             }
         }
-
+        
+        // works when user stops sliding the map
+        mapPinAnimated.play(fromFrame: 110, toFrame: 130, loopMode: .playOnce, completion: nil)
+        print("Stopped sliding!")
       }
+    
+    // works when user starts sliding the map
+    func mapView(_ mapView: GMSMapView, willMove gesture: Bool) {
+        mapPinAnimated.play(fromFrame: 0, toFrame: 28, loopMode: .playOnce, completion: nil)
+        
+        print("Started sliding")
+    }
+    
+    // works while sliding
+    func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
+        mapPinAnimated.play(fromFrame: 29, toFrame: 109, loopMode: .loop, completion: nil)
+        
+        print("Slidiiiing...")
+    }
     
 }

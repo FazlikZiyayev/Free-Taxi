@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F41FD6FC277C8D4C005B0F2C /* mapPin.json in Resources */ = {isa = PBXBuildFile; fileRef = F41FD6FB277C8D4C005B0F2C /* mapPin.json */; };
 		F4229F91276CFD6800C54C3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4229F90276CFD6800C54C3C /* AppDelegate.swift */; };
 		F4229F93276CFD6800C54C3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4229F92276CFD6800C54C3C /* SceneDelegate.swift */; };
 		F4229F9A276CFD6800C54C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4229F99276CFD6800C54C3C /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		14CE8F9713A7CFAEFE2BCAFF /* Pods_Free_Taxi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Free_Taxi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD0B5442614A9E2EC3AA14C1 /* Pods-Free Taxi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free Taxi.release.xcconfig"; path = "Target Support Files/Pods-Free Taxi/Pods-Free Taxi.release.xcconfig"; sourceTree = "<group>"; };
 		DB40734711D757A18CF54359 /* Pods-Free Taxi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free Taxi.debug.xcconfig"; path = "Target Support Files/Pods-Free Taxi/Pods-Free Taxi.debug.xcconfig"; sourceTree = "<group>"; };
+		F41FD6FB277C8D4C005B0F2C /* mapPin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mapPin.json; sourceTree = "<group>"; };
 		F4229F8D276CFD6800C54C3C /* Free Taxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Free Taxi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4229F90276CFD6800C54C3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4229F92276CFD6800C54C3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F41FD6FD277C8D5B005B0F2C /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				F4229F99276CFD6800C54C3C /* Assets.xcassets */,
+				F41FD6FB277C8D4C005B0F2C /* mapPin.json */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 		F4229F84276CFD6800C54C3C = {
 			isa = PBXGroup;
 			children = (
@@ -94,7 +105,7 @@
 				F4229F92276CFD6800C54C3C /* SceneDelegate.swift */,
 				F44A9D9527707C0400068BB2 /* model */,
 				F44A9D89276FC77D00068BB2 /* vc */,
-				F4229F99276CFD6800C54C3C /* Assets.xcassets */,
+				F41FD6FD277C8D5B005B0F2C /* assets */,
 				F4229F9B276CFD6800C54C3C /* LaunchScreen.storyboard */,
 				F4229F9E276CFD6800C54C3C /* Info.plist */,
 			);
@@ -183,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41FD6FC277C8D4C005B0F2C /* mapPin.json in Resources */,
 				F44A9D9A27707C2A00068BB2 /* TripTableViewCell.xib in Resources */,
 				F4229F9D276CFD6800C54C3C /* LaunchScreen.storyboard in Resources */,
 				F4229F9A276CFD6800C54C3C /* Assets.xcassets in Resources */,
